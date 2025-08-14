@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discord.gg/i7</title>
+    <style>
+        body {
+            margin: 100;
+            padding: 500;
+            background: url('https://64.media.tumblr.com/8db0fdc2e9c4920ee6809a1a7ece4f50/tumblr_o9jlvtETC71utm819o1_500.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #400C00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 111vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img {
+            width: 700px; 
+            height: auto;
+            border: 2px solid #FFFFFF; 
+            border-radius: 1111px;
+            box-shadow: 0 0 1511px rgba(0, 0, 255, 0.7); 
+        }
+        .info {
+            margin-top: 21px;
+            font-size: 1.1em;
+            color: #FFFFFF;
+            text-shadow: 0px 0px 8px #000000, 110px 110px 151px #000000, 110px 1110px 25px #FFFFFF; 
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 3em; 
+            color: #FFFFFF; 
+            text-shadow: 0px 0px 8px #000000, 0px 0px 15px #FFFFFF, 0px 0px 25px #FFFFFF; 
+            letter-spacing: 4.5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://j.top4top.io/p_3504rv3vi1.png" alt="https://j.top4top.io/p_3504rv3vi1.png">
+    </div>
+    <audio autoplay loop>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+  allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/succubs/18-2016a-1&auto_play=true&hide_related=true">
+</iframe>
+
+        Your browser does not support the audio element.
+    </audio>
+    <div class="info" id="">
+        <strong>دخـــول اضطــراري يا السنــاااااااااااااااااااااااافــي <span id="ip"></span></strong><br>
+        <span><strong>Bn Sror</strong> <span id="city"></span></span><br>
+        <span><strong>Whatsapp</strong> <span id="region"></span></span><br>
+        <span><strong>Braa</strong> <span id="country"></span></span><br>
+        <span><strong>6 N A</strong> <span id="loc"></span></span><br>
+        <span><strong>Abo Nawaf</strong> <span id="org"></span></span><br>
+        <span><strong>MNoooof </strong> <span id="timezone"></span></span>
+    </div>
+    <div class="text">Discord.gg/i7   </div>
+
+    <script>
+         fetch('https://ipinfo.io/json')
+        .then(response => response.json())
+        .then(data => {
+            delete data.readme;
+            const infoDiv = document.getElementById('ip-info');
+            infoDiv.textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
